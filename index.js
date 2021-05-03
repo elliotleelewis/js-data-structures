@@ -1,3 +1,4 @@
+import { Graph } from './graph/graph.js';
 import { LinkedList } from './linked-list/linked-list.js';
 import { Queue } from './queue/queue.js';
 import { Stack } from './stack/stack.js';
@@ -22,3 +23,10 @@ linkedList.push('abc');
 linkedList.push('123');
 linkedList.pop();
 console.log('LINKED-LIST:', linkedList.toString());
+
+// Graph
+const graph = new Graph();
+graph.addNode('abc');
+graph.addNode('123');
+graph.addEdge('abc', '123');
+console.log('GRAPH:', graph.toString());
